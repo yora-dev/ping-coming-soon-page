@@ -11,6 +11,16 @@ import {
 import "./App.css";
 
 function App() {
+  const [input, setInput] = useState("");
+  const [isValid, setIsValid] = useState(true);
+
+  function handleSubmit() {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input)) {
+      setIsValid(false);
+    } else {
+      setIsValid(true);
+    }
+  }
   return (
     <>
       <div className="main-container">
@@ -18,21 +28,30 @@ function App() {
         <h1 className="ping-header">
           We are Launching <span className="bold"> soon!</span>
         </h1>
-        <p className="ping-msg">Subscribe and get notified</p>
+        <p className="ping-msg">Subscribe and get notified.</p>
 
-        <div className="form-container">
+        <form className="form-container">
           <div className="input-container">
             <input
               type="email"
               placeholder="Your email address..."
               className="input-field"
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
             />
-            <p className="error-msg">Please provide a valid email address.</p>
+            {!isValid && (
+              <p className="error-msg">Please provide a valid email address.</p>
+            )}
           </div>
-          <button type="submit" className="submit-btn">
+          <button
+            type="submit"
+            className="submit-btn"
+            disabled={input.length <= 0}
+            onClick={handleSubmit}
+          >
             Notify Me
           </button>
-        </div>
+        </form>
 
         <img src={Illustration} alt="" className="dash-board" />
 
