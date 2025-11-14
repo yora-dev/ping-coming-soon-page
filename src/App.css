@@ -1,0 +1,16 @@
+:root {
+  --btn-bg: hsl(223, 87%, 63%);
+
+  --body-bg: hsl(223, 100%, 88%);
+  --error: hsl(354, 100%, 66%);
+
+  --body-text: hsl(0, 0%, 59%);
+  --bold-color: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
