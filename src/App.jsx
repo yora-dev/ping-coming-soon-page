@@ -1,6 +1,12 @@
 import { useState } from "react";
 import Logo from "./assets/logo.svg";
 import Illustration from "./assets/illustration-dashboard.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./App.css";
 
@@ -15,18 +21,32 @@ function App() {
         <p className="ping-msg">Subscribe and get notified</p>
 
         <div className="form-container">
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="Your email address..."
-          />
+          <div className="input-container">
+            <input
+              type="email"
+              placeholder="Your email address..."
+              className="input-field"
+            />
+            <p className="error-msg">Please provide a valid email address.</p>
+          </div>
           <button type="submit" className="submit-btn">
             Notify Me
           </button>
         </div>
 
         <img src={Illustration} alt="" className="dash-board" />
+
+        <div className="footer">
+          <div className="social-container">
+            <FontAwesomeIcon className="icon" icon={faFacebookF} />
+            <FontAwesomeIcon className="icon" icon={faTwitter} />
+            <FontAwesomeIcon className="icon" icon={faInstagram} />
+          </div>
+
+          <p className="copyright">
+            &copy; Copyright Ping. All rights reserved.
+          </p>
+        </div>
       </div>
     </>
   );
