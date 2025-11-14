@@ -14,8 +14,9 @@ function App() {
   const [input, setInput] = useState("");
   const [isValid, setIsValid] = useState(true);
 
-  function handleSubmit() {
+  function handleSubmit(e) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input)) {
+      e.preventDefault();
       setIsValid(false);
     } else {
       setIsValid(true);
@@ -33,7 +34,6 @@ function App() {
         <form className="form-container">
           <div className="input-container">
             <input
-              type="email"
               placeholder="Your email address..."
               className="input-field"
               value={input}
@@ -47,7 +47,7 @@ function App() {
             type="submit"
             className="submit-btn"
             disabled={input.length <= 0}
-            onClick={handleSubmit}
+            onClick={(e) => handleSubmit(e)}
           >
             Notify Me
           </button>
