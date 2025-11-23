@@ -1,16 +1,81 @@
-# React + Vite
+# Frontend Mentor - Ping coming soon page solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da).  
+This challenge helped me improve my form validation, layout structuring, and responsive design skills.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+### The challenge
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users should be able to:
+
+- View the optimal layout depending on their device’s screen size
+- See hover states on interactive elements
+- Submit their email using an input field
+- Receive error messages when:
+  - The input field is empty
+  - The email format is incorrect
+
+### Screenshot
+
+(./preview.jpg)
+
+### Links
+
+- Solution URL: https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da
+- Live Site URL: https://ping-coming-soon-page-eta-one.vercel.app/
+
+## My process
+
+### Built with
+
+- Semantic HTML5
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- React
+
+### What I learned
+
+- This project helped me practice basic email validation in React.
+- I also improved at handling error states and updating UI based on validation.
+
+### Continued development
+
+**In future projects, I want to focus on:**
+
+- More robust form validation using libraries
+- Improving accessibility for form inputs
+- Adding small animations and transitions
+- Strengthening responsive design techniques
+
+## Useful resources
+
+https://react.dev/
+
+## Author
+
+- Frontend Mentor - [@yora-dev](https://www.frontendmentor.io/profile/yora-dev)
+- GitHub - [@yora-dev](https://github.com/yora-dev)
+- Discord - [@yordanos01](https://discord.com/users/1417132259563147407)
+- Linkedin - [@yordanos01](https://www.linkedin.com/in/yordanos01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
+## Acknowledgments
+
+- Big thanks to the Frontend Mentor community for feedback and suggestions. Also inspired by a few other Calculator App solutions to refine my approach.
